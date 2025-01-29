@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Ritik Arora Portfolio</title>
     <style>
-            *{
-                margin : 0;
-                padding : 0;
-            }
+
+        *{
+            padding : 0;
+            margin : 0;
+        }
         body{
             background-color: rgb(0, 0, 35);
             color: white;
@@ -79,6 +80,16 @@
             padding-left: 50px;
             font-size: 3rem;
         }
+        @keyframes appear {
+            from{
+                opacity : 0.8;
+                scale: 0.2; 
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
         .secondLeftSection{
             display: flex;
             justify-content: space-around;
@@ -88,6 +99,10 @@
         }
         .secondRightSection{
             width: 5%;
+        }
+        .oracle{
+            animation: appear linear;
+            animation-timeline: view();
         }
     </style>
 </head>
@@ -137,12 +152,13 @@
                 Past Experience
             </h1>
             <div class="secondLeftSection">
-                <img src="Oracle_Logo.svg.png" alt="" style="height: 100px;width: 274px;">
+                <img class="oracle" src="Oracle_Logo.svg.png" alt="" style="height: 100px;width: 274px;">
             </div>
             <div class="secondRightSection">
                 Right
             </div>
         </section>
+        
 </body>
     </main>
 </body>
