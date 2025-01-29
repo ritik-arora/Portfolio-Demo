@@ -77,8 +77,14 @@
         }
         .secondSectionTop{
             padding-top: 50px;
-            padding-left: 50px;
+            padding-left: 0px;
             font-size: 3rem;
+            color: yellow;
+        }
+        .secondSectionBottom{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
         @keyframes appear {
             from{
@@ -92,17 +98,22 @@
         }
         .secondLeftSection{
             display: flex;
-            justify-content: space-around;
-            width: 45%;
+            justify-content: space-between;
+            width: 20%;
             align-items: center;
             padding-top: 50px;
         }
         .secondRightSection{
-            width: 5%;
+            display: flex;
+            justify-content: space-between;
+            width: 65%;
+            align-items: center;
+            padding-top: 50px;
         }
         .oracle{
             animation: appear linear;
             animation-timeline: view();
+            border-radius: 5%;
         }
     </style>
 </head>
@@ -149,16 +160,27 @@
         </section>
         <section class="secondSection">
             <h1 class="secondSectionTop">
-                Past Experience
+                <!-- Past Experience -->
+                <center>Website under Construction <br>
+                <img src="donotcross.png" alt="" width="100%" height = "300px" ></center>
             </h1>
-            <div class="secondLeftSection">
-                <img class="oracle" src="Oracle_Logo.svg.png" alt="" style="height: 100px;width: 274px;">
+            <div class="secondSectionBottom">
+                <div class="secondLeftSection">
+                    <!-- <img class="oracle" src="Oracle_Logo.svg.png" alt="" style="height: 100px;width: 274px;">
+                -->
+                </div>
+                <div class="secondRightSection">
+                    <!-- I am currently working with Oracle as an Assocaite Consultant, 
+                    on OFSAA (Oracle Financial Services Analytical Applications) 
+                    which is the flagship Analytics product by Oracle in BFSI Sector.
+                    I've worked closely with Santander Bank on their ETL, Data Analytics and Post Installation tasks.
+                -->
             </div>
-            <div class="secondRightSection">
-                Right
             </div>
         </section>
-        
+        <section class="thirdSection">
+            
+        </section>
 </body>
     </main>
 </body>
