@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ritik Arora Portfolio</title>
+    <link rel="icon" href=""type="image/x-icon" />
+    <style>
+            *{
+                margin : 0;
+                padding : 0;
+            }
+        body{
+            background-color: rgb(0, 0, 35);
+            color: white;
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content : space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(0, 0, 45);
+        }
+        nav ul{
+            display: flex;
+            justify-content : center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.831);
+            font-size: 1.02rem;
+        }
+        .left-nav{
+            font-size: 1.6rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin : 85px 0;
+        }
+        .firstSection div{
+            width : 45%;
+        }
+        .leftSection{
+            margin-left: 100px;
+            font-size: 2.5rem;
+        }
+        .rightSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+        }
+        .purple{
+            color: rgb(1, 149, 202);
+        }
+        #element{
+            color: rgb(1, 149, 202);
+        }
+        .secondSection{
+            background-color:  rgb(1, 149, 202);
+            margin-top : 170px;
+            height: 500px;
+        }
+        .secondSectionTop{
+            padding-top: 50px;
+            padding-left: 50px;
+            font-size: 3rem;
+        }
+        .secondLeftSection{
+            display: flex;
+            justify-content: space-around;
+            width: 45%;
+            align-items: center;
+            padding-top: 50px;
+        }
+        .secondRightSection{
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-nav">Ritik's Portfolio</div>
+            <div class="right-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Experience</a></li>
+                    <li><a href="/">Certification</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi , I am <span class="purple">RITIK ARORA</span><br>
+                I am a Technical Consultant<br>
+                Working with ORACLE<br><br>
+                I am passionate about<br>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+
+                <!-- Load library from the CDN -->
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                <!-- Setup and start animation! -->
+                <script>
+                    var typed = new Typed('#element', {
+                    strings: ['<i>Web Development,</i>','<i>Data Science,</i>', '<i>Machine Learning,</i>', '<i>Arificial Intelligence,</i>','<i>&amp; Solving DSA Problems.</i>'],
+                    typeSpeed: 50,
+                    });
+                </script>
+            </div>
+            <div class="rightSection">
+                <img src="img1.png" height="400px">
+            </div>
+        </section>
+        <section class="secondSection">
+            <h1 class="secondSectionTop">
+                Past Experience
+            </h1>
+            <div class="secondLeftSection">
+                <img src="Oracle_Logo.svg.png" alt="" style="height: 100px;width: 274px;">
+            </div>
+            <div class="secondRightSection">
+                Right
+            </div>
+        </section>
+</body>
+    </main>
+</body>
+</html>
